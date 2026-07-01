@@ -1,0 +1,1 @@
+Upload this whole folder to Netlify, not just index.html. The homepage is index.html.
