@@ -1,9 +1,377 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Available Animals | DLZ_EXOTICS</title><link rel="stylesheet" href="assets/style.css"></head><body><header><div class="container nav"><a class="brand" href="index.html"><div class="brand-logo"><img src="assets/logo.webp" alt="DLZ_EXOTICS logo"></div><div><h1>DLZ_EXOTICS</h1><p>Ball Python Projects</p></div></a><nav><a href="index.html" class="">Home</a><a href="available.html" class="active">Available</a><a href="projects.html" class="">Projects</a><a href="about.html" class="">About</a><a href="terms.html" class="">Terms</a><a href="contact.html" class="">Contact</a></nav></div></header>
-<main><section class="page-header"><div class="container"><span class="eyebrow">Available Animals</span><h2>Current DLZ_EXOTICS listings</h2><p class="lead">All listed animals are 2025 hatches, feeding on both frozen/thawed mice and live mice, and available unless marked otherwise.</p><div class="actions"><a class="btn" href="https://linktr.ee/DLZ_Exotics/shop" target="_blank">View Shop Linktree</a><a class="btn secondary" href="https://www.instagram.com/dlz_exotics?igsh=a3dwZzdqaGtlYzEy" target="_blank">DM to Inquire</a></div></div></section><section class="container">
-<div class="cards">
-<div class="card"><img class="snake-photo" src="assets/snake1.jpg"><div class="card-body"><div class="final-badge">Available Now</div><h3>Cinnamon DH Albino Pied</h3><p>Female 2025 hatch. Eats both frozen/thawed mice and live mice. Available now.</p><div class="badge-row"><span class="badge">Female</span><span class="badge">Cinnamon</span><span class="badge">DH Albino Pied</span><span class="badge">2025 Hatch</span></div><p><strong>Feeding:</strong> Frozen/thawed mice and live mice</p><p><strong>Status:</strong> Available</p><p><strong>Price:</strong> DM to inquire</p></div></div>
-<div class="card"><img class="snake-photo" src="assets/snake2.jpg"><div class="card-body"><div class="final-badge">Available Now</div><h3>Pastel Enchi Yellow Belly Het Clown</h3><p>Male 2025 hatch. Eats both frozen/thawed mice and live mice. Available now.</p><div class="badge-row"><span class="badge">Male</span><span class="badge">Pastel</span><span class="badge">Enchi</span><span class="badge">Yellow Belly</span><span class="badge">Het Clown</span></div><p><strong>Feeding:</strong> Frozen/thawed mice and live mice</p><p><strong>Status:</strong> Available</p><p><strong>Price:</strong> DM to inquire</p></div></div>
-<div class="card"><img class="snake-photo" src="assets/snake3.jpg"><div class="card-body"><div class="final-badge">Available Now</div><h3>Cinnamon DH Albino Pied</h3><p>Female 2025 hatch. Eats both frozen/thawed mice and live mice. Available now.</p><div class="badge-row"><span class="badge">Female</span><span class="badge">Cinnamon</span><span class="badge">DH Albino Pied</span><span class="badge">2025 Hatch</span></div><p><strong>Feeding:</strong> Frozen/thawed mice and live mice</p><p><strong>Status:</strong> Available</p><p><strong>Price:</strong> DM to inquire</p></div></div>
-</div>
-</section><section class="dark-band"><div class="container"><div class="section-title"><span class="eyebrow">Morph Variety</span><h2>Different looks. Different projects. Same DLZ quality.</h2><p>This showcase image highlights the variety of ball python morphs and project direction behind DLZ_EXOTICS.</p></div><img class="showcase-image" src="assets/showcase.jpg"><p class="showcase-caption">Morph variety showcase — individual genetics listed separately when animals are posted for sale.</p></div></section></main>
-<footer>© 2026 DLZ_EXOTICS. Ball python projects, availability, and pricing subject to change.</footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Available Animals | DLZ_EXOTICS</title>
+
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a class="brand" href="index.html">
+      <div class="brand-logo">
+        <img src="assets/logo.webp" alt="DLZ_EXOTICS logo">
+      </div>
+
+      <div>
+        <h1>DLZ_EXOTICS</h1>
+        <p>Ball Python Projects</p>
+      </div>
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="available.html" class="active">Available</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+
+  <section class="page-header">
+    <div class="container">
+
+      <span class="eyebrow">Available Animals</span>
+
+      <h2>Current DLZ_EXOTICS listings</h2>
+
+      <p class="lead">
+        Browse animals currently available from DLZ_EXOTICS.
+        Availability and pricing are updated automatically.
+      </p>
+
+      <div class="actions">
+
+        <a
+          class="btn"
+          href="https://linktr.ee/DLZ_Exotics/shop"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Shop Linktree
+        </a>
+
+        <a
+          class="btn secondary"
+          href="https://www.instagram.com/dlz_exotics"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          DM to Inquire
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="container">
+
+    <div id="animals-status">
+      Loading available animals...
+    </div>
+
+    <div id="animals-container" class="cards"></div>
+
+  </section>
+
+
+  <section class="dark-band">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span class="eyebrow">Morph Variety</span>
+
+        <h2>
+          Different looks. Different projects. Same DLZ quality.
+        </h2>
+
+        <p>
+          Explore current DLZ_EXOTICS animals and ongoing ball python projects.
+        </p>
+
+      </div>
+
+      <img
+        class="showcase-image"
+        src="assets/showcase.jpg"
+        alt="DLZ_EXOTICS ball python morph showcase"
+      >
+
+      <p class="showcase-caption">
+        Morph variety showcase — individual genetics are listed separately
+        when animals are posted for sale.
+      </p>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+  © 2026 DLZ_EXOTICS. Ball python projects, availability, and pricing subject
+  to change.
+</footer>
+
+
+<script>
+
+const SUPABASE_URL =
+  "https://lglxqupncxrmijeullxk.supabase.co";
+
+const SUPABASE_KEY =
+  "sb_publishable_We0-vISMZQOMlsQVmboksQ_OcaSuPTk";
+
+
+function escapeHtml(value) {
+
+  if (value === null || value === undefined) {
+    return "";
+  }
+
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+
+function formatPrice(price) {
+
+  if (
+    price === null ||
+    price === undefined ||
+    String(price).trim() === ""
+  ) {
+    return "DM to inquire";
+  }
+
+  const value = String(price).trim();
+
+  if (value.startsWith("$")) {
+    return value;
+  }
+
+  return "$" + value;
+}
+
+
+async function loadAnimals() {
+
+  const container =
+    document.getElementById("animals-container");
+
+  const status =
+    document.getElementById("animals-status");
+
+
+  try {
+
+    const response = await fetch(
+
+      `${SUPABASE_URL}/rest/v1/public_available_animals?select=*&order=created_at.desc`,
+
+      {
+        headers: {
+          apikey: SUPABASE_KEY,
+          Authorization: `Bearer ${SUPABASE_KEY}`
+        }
+      }
+
+    );
+
+
+    if (!response.ok) {
+
+      const errorText = await response.text();
+
+      throw new Error(
+        `Supabase request failed: ${response.status} ${errorText}`
+      );
+    }
+
+
+    const animals = await response.json();
+
+
+    if (!Array.isArray(animals) || animals.length === 0) {
+
+      status.textContent =
+        "No animals are currently listed as available.";
+
+      return;
+    }
+
+
+    status.textContent = "";
+
+
+    container.innerHTML = animals.map((animal) => {
+
+      const animalName =
+        animal.name ||
+        animal.morph ||
+        "Available Ball Python";
+
+
+      const image = animal.image_url
+        ? `
+          <img
+            class="snake-photo"
+            src="${escapeHtml(animal.image_url)}"
+            alt="${escapeHtml(animalName)}"
+            loading="lazy"
+          >
+        `
+        : "";
+
+
+      const sexBadge = animal.sex
+        ? `<span class="badge">${escapeHtml(animal.sex)}</span>`
+        : "";
+
+
+      const morphBadge = animal.morph
+        ? `<span class="badge">${escapeHtml(animal.morph)}</span>`
+        : "";
+
+
+      const hatchBadge = animal.hatch_year
+        ? `<span class="badge">${escapeHtml(animal.hatch_year)} Hatch</span>`
+        : "";
+
+
+      const notes = animal.notes
+        ? `<p>${escapeHtml(animal.notes)}</p>`
+        : "";
+
+
+      return `
+
+        <div class="card">
+
+          ${image}
+
+          <div class="card-body">
+
+            <div class="final-badge">
+              Available Now
+            </div>
+
+            <h3>
+              ${escapeHtml(animalName)}
+            </h3>
+
+            ${notes}
+
+            <div class="badge-row">
+
+              ${sexBadge}
+
+              ${morphBadge}
+
+              ${hatchBadge}
+
+            </div>
+
+
+            <p>
+
+              <strong>Feeding:</strong>
+
+              ${escapeHtml(
+                animal.feeding ||
+                "Contact DLZ_EXOTICS for feeding information"
+              )}
+
+            </p>
+
+
+            <p>
+
+              <strong>Status:</strong>
+
+              ${escapeHtml(
+                animal.status ||
+                "Available"
+              )}
+
+            </p>
+
+
+            <p>
+
+              <strong>Price:</strong>
+
+              ${escapeHtml(
+                formatPrice(animal.price)
+              )}
+
+            </p>
+
+
+            <div class="actions">
+
+              <a
+                class="btn"
+                href="https://www.instagram.com/dlz_exotics"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Inquire
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      `;
+
+    }).join("");
+
+
+  }
+
+  catch (error) {
+
+    console.error(
+      "DLZ_EXOTICS animal loading error:",
+      error
+    );
+
+    status.textContent =
+      "Available animals could not be loaded. Please try again later.";
+
+  }
+
+}
+
+
+loadAnimals();
+
+</script>
+
+
+</body>
+</html>
